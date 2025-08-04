@@ -9,6 +9,8 @@ pagination_next: null
 ---
 
 import NetworkChecker from '@site/src/components/NetworkChecker';
+import SubstrateNetworkChecker from '@site/src/components/SubstrateNetworkChecker';
+import SolanaNetworkChecker from '@site/src/components/SolanaNetworkChecker';
 
 
 **Subsquid** is a fast, decentralized blockchain data lake and an indexing stack built on top of it. Get only the data you want, in bulk.
@@ -20,16 +22,17 @@ import TabItem from '@theme/TabItem';
 <summary>Which chains are in the data lake?</summary>
 
 Over 200 in total, including
- - EVM / Ethereum-like:
+ - EVM / Ethereum-like. Full list:
    <NetworkChecker />
- - SVM / Solana-like
- - Substrate / Polkadot-like
+ - SVM / Solana-like. Full list:
+   <SolanaNetworkChecker />
+ - Substrate / Polkadot-like. Full list:
+   <SubstrateNetworkChecker />
  - Miscellaneous: Tron, Starknet, Fuel
 
 BTW you can choose one of the VMs / network types on the top left to only see content related to it.
 
-**Check if your EVM network is supported:**
-
+![VM selection](./index-vm-selection.png)
 
 </details>
 
@@ -73,7 +76,7 @@ During the current bootstrapping stage there are no query fees. Exact conditions
  - You can make your own portal and reserve network's bandwidth by locking SQD tokens. A minimal lockup of 10k SQD provides enough bandwidth for most users. You do get your tokens back when you terminate your portal.
  - If you're running your indexer in [Subsquid Cloud](/cloud) then the data lake queries are free and your monthly payment is determined solely by the hardware your indexer is using.
 
-In the future query fees will be based on the cost of running the data lake. Currently these are in the range of 1-2 SQD ($0.30-0.50) per Mbit/s of bandwidth per month.
+In the future query fees will be based on the cost of running the data lake. Currently these are in the range of 1-2 SQD ($0.15-0.30) per Mbit/s of bandwidth per month.
 
 </details>
 
